@@ -1,12 +1,12 @@
-# joi-enums-extension
+# joi-enum-extensions
 
-Joi extensions for enums mapping.
+Joi extensions for enum mapping.
 
-[![Build Status](https://travis-ci.org/WesTyler/joi-enums-extension.svg?branch=master)](https://travis-ci.org/WesTyler/joi-enums-extension)
-[![NSP Status](https://nodesecurity.io/orgs/westyler/projects/be6a2f14-db5f-48f1-a9ab-8f74207670e1/badge)](https://nodesecurity.io/orgs/westyler/projects/be6a2f14-db5f-48f1-a9ab-8f74207670e1)
-[![Known Vulnerabilities](https://snyk.io/test/github/westyler/joi-enums-extension/badge.svg)](https://snyk.io/test/github/westyler/joi-enums-extension)
+[![Build Status](https://travis-ci.org/logoran/joi-enum-extensions.svg?branch=master)](https://travis-ci.org/logoran/joi-enum-extensions)
+[![NSP Status](https://nodesecurity.io/orgs/logoran/projects/be6a2f14-db5f-48f1-a9ab-8f74207670e1/badge)](https://nodesecurity.io/orgs/logoran/projects/be6a2f14-db5f-48f1-a9ab-8f74207670e1)
+[![Known Vulnerabilities](https://snyk.io/test/github/logoran/joi-enum-extensions/badge.svg)](https://snyk.io/test/github/logoran/joi-enum-extensions)
 
-Lead Maintainer: [Wes Tyler](https://github.com/westyler)
+Lead Maintainer: [Leo Long](https://github.com/yujunlong2000)
 
 # Usage
 
@@ -14,8 +14,8 @@ The `.map` method can be chained onto the base Joi number schema:
 
 ```js
 const BaseJoi = require('joi');
-const Enums = require('joi-enums-extension');
-const Joi = BaseJoi.extend(Enums);
+const Enum = require('joi-enum-extensions');
+const Joi = BaseJoi.extend(Enum);
 
 const schema = Joi.number().map({
     admin : 1,
@@ -25,4 +25,4 @@ const schema = Joi.number().map({
 ```
 
 # API
-See the [API Reference](https://github.com/westyler/joi-enums-extension/blob/master/API.md).
+See the [API Reference](https://github.com/logoran/joi-enum-extensions/blob/master/API.md).

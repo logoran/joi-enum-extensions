@@ -1,26 +1,26 @@
 {
-  "name": "joi-enums-extension",
+  "name": "joi-enum-extensions",
   "version": "1.0.2",
-  "description": "Joi extensions for enums mapping.",
+  "description": "Joi extensions for enum mapping.",
   "main": "lib/index.js",
   "scripts": {
     "test": "lab -t 100 -a code -L"
   },
-  "repository": "git://github.com/westyler/joi-enums-extension.git",
+  "repository": "git://github.com/logoran/joi-enum-extensions.git",
   "keywords": [
     "joi",
     "schema",
     "extension",
     "validation",
     "map",
-    "enums"
+    "enum"
   ],
-  "author": "Wes Tyler (wtyler@xogrp.com)",
-  "license": "BSD-3-Clause",
+  "author": "Leo Long",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/westyler/joi-enums-extension/issues"
+    "url": "https://github.com/logoran/joi-enum-extensions/issues"
   },
-  "homepage": "https://github.com/westyler/joi-enums-extension#readme",
+  "homepage": "https://github.com/logoran/joi-enum-extensions#readme",
   "peerDependencies": {
     "joi": ">10.x.x"
   },

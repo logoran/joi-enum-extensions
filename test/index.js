@@ -133,6 +133,13 @@ describe('enums', () => {
         expect(schema.describe()).to.equal({
             type: 'number',
             invalids: [Infinity, -Infinity],
+            options: {
+                language: {
+                    number: {
+                        map: 'must be a number or one of {{enums}}'
+                    }
+                }
+            },
             rules: [
                 {
                     name: 'integer'
