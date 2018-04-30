@@ -75,6 +75,18 @@ describe('enums', () => {
         });
     });
 
+    it('fails on an non-enumerated string when un-mapped', (done) => {
+
+        const schema = Joi.number().integer();
+        schema.validate('a', (err, value) => {
+
+            expect(err).to.not.be.null();
+            expect(err.message).to.equal('"value" must be a number');
+
+            done();
+        });
+    });
+
     it('fails without convert', (done) => {
 
         const schema = Joi.number().integer().map({
